@@ -102,6 +102,9 @@ function promptSetup () {
     PS1+=$PR_SIGN                 # the user sign
     PS1+=" "                      # an additional space
 
+    # Set up the right prompt
+    RPS1="%F{yellow}(%D{%-d/%-m/%y %H:%M:S})%f" 
+
     # reset the tmux title
     promptSetMultiplexerTabTitle "zsh"
 }
