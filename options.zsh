@@ -56,6 +56,9 @@ setopt TRANSIENT_RPROMPT
 # If unset, the cursor is set to the end of the word if completion is started. Otherwise it stays there and completion is done from both ends.
 setopt COMPLETE_IN_WORD
 
+# Makes tab completion select the first match when tab is pressed, instead of presenting a menu and then selecting on the second tab
+setopt MENU_COMPLETE
+
 # Make cd push the old directory onto the directory stack.
 setopt AUTO_PUSHD
 
