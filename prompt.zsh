@@ -75,6 +75,9 @@ function promptSetup () {
         PR_SIGN+="`hostname` "
     fi
 
+    # add the directory to the prompt, up to the last two levels
+    PR_SIGN+=": %F{grey}%U%2~%u%f "
+
     # setup the main sign
     if [[ $CURRENT_USER == 'root' ]]; then
         PR_SIGN+="☠"
@@ -85,7 +88,6 @@ function promptSetup () {
     fi
 
     PR_SIGN+="%F{white}%b"
-
 
 
     # http://unix.stackexchange.com/questions/1022/is-it-possible-to-display-stuff-below-the-prompt-at-a-prompt
