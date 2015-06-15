@@ -47,3 +47,6 @@ foreach file (`echo $sources`)
     fi
 end
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/home/niksko/.gvm/bin/gvm-init.sh" ]] && source "/home/niksko/.gvm/bin/gvm-init.sh"
