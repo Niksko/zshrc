@@ -24,3 +24,12 @@ export PATH=/usr/local/heroku/bin:$PATH
 
 # Go path
 export GOPATH=$HOME/GoProjects
+
+# Homestead path
+export PATH=$HOME/.composer/vendor/bin:$PATH
+
+# Export QT graphics setting to fix wonky display in VLC and other qt applications
+export QT_GRAPHICSSYSTEM=native
+
+# Force 256 color support in terminal
+export TERM=xterm-256color
