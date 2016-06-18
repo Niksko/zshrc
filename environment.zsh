@@ -20,7 +20,8 @@ export PATH=$HOME/.local/sbin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH
 
 # Go path
-export GOPATH=$HOME/Code/GoProjects
+export GOPATH=$HOME/Code/GoProjects/
+export PATH=$GOPATH/bin:$PATH
 
 # Homestead path
 export PATH=$HOME/.composer/vendor/bin:$PATH
