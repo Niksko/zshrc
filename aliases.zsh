@@ -153,3 +153,12 @@ alias -s exe="open"
 alias -s tjp="tj3"
 alias -s asc="gpg"
 alias -s pem="openssl x509 -noout -text -in "
+
+# Alias cp and mv to pycp and pymv, to get nice progress bars
+alias cp="pycp"
+alias mv="pymv"
+
+# Do the same for sudo versions
+# Note that the real function of this is to keep checking for alias substitutions
+# in subsequent words. Reference: https://superuser.com/questions/244342/is-there-a-way-to-alias-a-multi-worded-command-in-unix
+alias sudo='sudo '
